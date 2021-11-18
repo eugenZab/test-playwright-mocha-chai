@@ -14,7 +14,7 @@ export const testConfig: TestConfig = {
     width: 1280,
     height: 600
   }
-}
+};
 
 const getPassword = (): string => {
   if (process.env.testpassword) {
@@ -33,7 +33,7 @@ const getUserName = (): string => {
 };
 
 export const roles: Roles = {
-  testRole : {
+  testRole: {
     username: getUserName(),
     password: getPassword()
   }
