@@ -1,7 +1,7 @@
 {
   "reporter": "mochawesome",
   "reporter-option": [
-    "reportDir=tmp/mochawesome-report/",
+    "reportDir=artifacts/mochawesome-report/",
     "quiet=true",
     "overwrite=true",
     "html=true",
@@ -18,7 +18,7 @@
     "chai/register-assert"
   ],
   "extension": [
-    "ts"
+    ".e2e.ts"
   ],
   "timeout": 120000,
   "retries": 0,

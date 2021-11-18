@@ -1,19 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "out-tsc",
+    "baseUrl": ".",
+    "outDir": "dist",
     "module": "commonjs",
-    "target": "es2018",
+    "target": "es2021",
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types",
-      "typings"
+      "types"
     ],
     "types": [
       "node",
+      "global",
       "playwright",
       "@types/chai",
       "@types/mocha",
-      "global"
     ],
     "paths": {
       "@enums/*": ["./test/enums/*"],
